@@ -22,6 +22,7 @@ body {
 	background-color: $bgColor;
 	font-family: $defaultFontFamily;
 	font-size: $defaultFontSize + px;
+	font-weight: 700;
 	color: $defaultFontColor;
 }
 
@@ -47,8 +48,8 @@ main {
 }
 
 h1	{
-	font-weight: bold;
-	@include adaptiv-value("font-size", 40, 24, 0);
+	font-size: $h1FontSize;
+	@include adaptiv-value("font-size", 48, 24, 0);
 }
 
 h2	{
@@ -110,6 +111,7 @@ select {
 
 // Mobile - first
 .container {
+	position: relative;
 	max-width: $containerWidth + px;
 	margin: 0 4px;
 	padding: 0 $mobileContainerSidePadding + px;
@@ -133,4 +135,11 @@ select {
 	@include response('xxl') {
 		max-width: $containerWidth + px;
 	}
+}
+
+._flex-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
 }

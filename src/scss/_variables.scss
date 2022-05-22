@@ -1,20 +1,24 @@
 @use 'sass:math';
 
-$defaultFontFamily: Montserrat;
-$BebasNeueFontFamily: BebasNeue;
-$AlfaSlabOneFontFamily: AlfaSlabOne;
+$defaultFontFamily: Gotham;
+$secondFontFamily: OpenSans;
 $defaultFontSize: 14; // размер шрифта по шаблону
-$maxWidthContainer: 1280; // ширина контейнера по шаблону для десктопа
+$h1FontSize: 48px; // размер шрифта по шаблону
+$maxWidthContainer: 1470; // ширина контейнера по шаблону для десктопа
 
 // Colors
 $whiteColor: #fff;
-$redColor: rgba(191, 34, 34, 1);
-$greyColor: rgba(220, 220, 220, 1);
-$yelowColor: rgba(255, 192, 69, 1);
-$defaultFontColor: #3D3D3D;
-$secondFontColor: #3D2514;
 
-$linkColor: rgb(70, 70, 70);
+$backgroundColor: #DEE1FF;
+$neutralColor: #FFFFFF;
+$greyColor: #777B9E;
+$primaryColor: #596AFE;
+$secondaryColor: #080357;;
+$accentColor: #F68E5F;
+
+$defaultFontColor: $whiteColor;
+
+$linkColor: $whiteColor;
 $bgColor: $whiteColor;
 
 // Container sizes
